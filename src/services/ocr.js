@@ -1,4 +1,4 @@
-import { createWorker } from 'tesseract.js';
+import * as Tesseract from 'tesseract.js';
 
 let cachedWorker = null;
 
@@ -8,7 +8,7 @@ let cachedWorker = null;
  */
 async function getOCRWorker(onProgress) {
   if (!cachedWorker) {
-    cachedWorker = await createWorker('eng', 1, {
+    cachedWorker = await Tesseract.createWorker('eng', 1, {
       logger: (m) => {
         if (m.status === 'recognizing text' && onProgress) {
           onProgress(m.progress);
