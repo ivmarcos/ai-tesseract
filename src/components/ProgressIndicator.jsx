@@ -4,7 +4,7 @@ function ProgressIndicator({ progress }) {
   const getStatusText = () => {
     if (progress < 50) return 'Extracting text with OCR...';
     if (progress < 60) return 'OCR complete!';
-    if (progress < 100) return 'Enhancing with GPT...';
+    if (progress < 100) return 'Enhancing with AI...';
     return 'Done!';
   };
 

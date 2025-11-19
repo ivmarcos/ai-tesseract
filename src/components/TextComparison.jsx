@@ -42,7 +42,7 @@ function TextComparison({ original, enhanced, confidence }) {
         {enhanced && (
           <div className="text-panel enhanced">
             <div className="panel-header">
-              <h3>GPT-Enhanced 🚀</h3>
+              <h3>AI-Enhanced 🚀</h3>
               <button
                 className="copy-button"
                 onClick={() => copyToClipboard(enhanced, setCopiedEnhanced)}
@@ -59,7 +59,7 @@ function TextComparison({ original, enhanced, confidence }) {
 
       {!enhanced && confidence < 50 && (
         <div className="enhancement-note">
-          <p>⚠️ OCR confidence is low. GPT enhancement may not be reliable.</p>
+          <p>⚠️ OCR confidence is low. AI enhancement may not be reliable.</p>
         </div>
       )}
     </div>

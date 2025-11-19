@@ -1,5 +1,5 @@
 {
-  "name": "ocr-gpt-app",
+  "name": "ocr-ai-app",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -11,8 +11,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tesseract.js": "^5.0.4",
-    "openai": "^4.20.1"
+    "tesseract.js": "^5.0.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

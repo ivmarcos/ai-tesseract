@@ -3,7 +3,7 @@ import ImageUploader from './components/ImageUploader';
 import ProgressIndicator from './components/ProgressIndicator';
 import TextComparison from './components/TextComparison';
 import { extractTextFromImage } from './services/ocr';
-import { enhanceTextWithGPT } from './services/gpt';
+import { enhanceTextWithAI } from './services/ai';
 import './App.css';
 
 function App() {
@@ -40,10 +40,10 @@ function App() {
         return;
       }
 
-      // Step 2: Enhance with GPT (if confidence is reasonable)
+      // Step 2: Enhance with AI (if confidence is reasonable)
       if (conf > 30) {
         setProgress(60);
-        const enhanced = await enhanceTextWithGPT(text);
+        const enhanced = await enhanceTextWithAI(text);
         setEnhancedText(enhanced);
         setProgress(100);
       } else {
@@ -70,7 +70,7 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>OCR + GPT Text Extractor</h1>
+        <h1>OCR + AI Text Extractor</h1>
         <p>Upload an image with text, and we'll extract and enhance it using AI</p>
       </header>
 
@@ -101,7 +101,7 @@ function App() {
 
       <footer className="app-footer">
         <p>
-          Powered by <strong>Tesseract.js</strong> (OCR) and <strong>GPT-4</strong> (Enhancement)
+          Powered by <strong>Tesseract.js</strong> (OCR) and <strong>Groq Llama</strong> (Enhancement)
         </p>
       </footer>
     </div>
