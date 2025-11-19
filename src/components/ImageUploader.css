@@ -1,0 +1,65 @@
+.image-uploader {
+  width: 100%;
+}
+
+.upload-zone {
+  border: 2px dashed #666;
+  border-radius: 12px;
+  padding: 3rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.upload-zone:hover:not(.disabled) {
+  border-color: #667eea;
+  background-color: rgba(102, 126, 234, 0.05);
+}
+
+.upload-zone.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.upload-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.upload-zone p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.upload-hint {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.uploaded-image {
+  text-align: center;
+}
+
+.uploaded-image img {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.reset-button {
+  background-color: #667eea;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: #5568d3;
+}
