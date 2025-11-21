@@ -20,22 +20,26 @@ A browser-based application that extracts text from images using Tesseract.js OC
 ## Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/YOUR_USERNAME/building-an-ai-powered-ocr-app-with-tesseractjs.git
 cd building-an-ai-powered-ocr-app-with-tesseractjs/app
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Set up environment variables:
+
 ```bash
 cp .env.example .env
 ```
 
 Edit `.env` and add your Groq API key:
+
 ```
 VITE_GROQ_API_KEY=your-api-key-here
 ```
@@ -45,6 +49,7 @@ Get your FREE API key from: https://console.groq.com/keys (no credit card requir
 ## Usage
 
 Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -67,6 +72,7 @@ npm run build
 The built files will be in the `dist/` directory.
 
 Preview the production build:
+
 ```bash
 npm run preview
 ```
@@ -100,4 +106,4 @@ MIT
 
 ## Article
 
-Read the full article: *[Link to Medium article]*
+Read the full article: _[https://medium.com/@ivmarcos/building-a-browser-based-ocr-app-tesseract-js-ai-grok-3a11d9703e4d]_
